@@ -13,6 +13,7 @@ Recibe por linea de comandos 4 parámetros:
 	 - umbral: Entero que permite un umbral entre el bloque del nodo y el del ethNetstat para decidir si el nodo está actualizado.
 	 - checkLocal: Flag (0|1) que indica si antes de obtener el valor del bloque del ethNetstat, hace una llamada a la función *eth_syncing* que puede permitir saber el estado del nodo sin falta de acceder al servicio ethNetstat.
 
+	 
 <code>
 $ ./checkNode.py http://127.0.0.1:22000 ws://52.56.86.239:3000/primus/ 2 0
 </code>

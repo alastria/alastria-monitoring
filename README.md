@@ -27,6 +27,7 @@ Usage example:
 $ ./checkNode.py http://127.0.0.1:22000 ws://52.56.86.239:3000/primus/ 2 0 1
 </code>
 
+
 Requires python _websocket-client_ library
 
 <code>

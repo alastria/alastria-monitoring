@@ -1,0 +1,21 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'alastria-t'
+    scrape_timeout: 10s
+    metrics_path: /debug/metrics/prometheus
+    scheme: http
+    static_configs:
+      - targets: ['node_t_ip:6060']
+
+  - job_name: 'alastria-b'
+    scrape_timeout: 10s
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      - targets: ['node_b_ip:9545']
